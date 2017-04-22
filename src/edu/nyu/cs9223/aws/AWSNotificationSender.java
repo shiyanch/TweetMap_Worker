@@ -14,7 +14,7 @@ public class AWSNotificationSender {
     private static final AmazonSNSClient SNS_Client;
     private static final String ARN = "arn:aws:sns:us-west-2:999340566974:TweetWithSentiment";
     static {
-        BasicAWSCredentials credentials = new BasicAWSCredentials("AKIAITPI6U23VQLLC7ZQ", "5KZyajmwiTQUFzuMH/PekHBkkKTcCKa1dNwggAa4");
+        BasicAWSCredentials credentials = new BasicAWSCredentials("", "");
         SNS_Client = new AmazonSNSClient(credentials);
         SNS_Client.setRegion(Region.getRegion(Regions.US_WEST_2));
     }
